@@ -23,18 +23,21 @@ const Topbar1 = () => {
             <Nav.Link as={NavLink} to="/" className="nav-links  bold ">
               Home
             </Nav.Link>
-            <Nav.Link className="nav-links " as={NavLink} to="/about">
+            <Nav.Link className="nav-links " >
               About
             </Nav.Link>
             {/* <Nav.Link className="nav-link" as={NavLink} to="/addservice">
                 What we do
               </Nav.Link> */}
-            <Nav.Link className="nav-links">Service</Nav.Link>
+            {/* <Nav.Link className="nav-link" as={NavLink} to="/service ">Service</Nav.Link> */}
+            <Nav.Link className="nav-links" as={NavLink} to="/service ">
+            Service
+            </Nav.Link>
             <Nav.Link className="nav-links" as={NavLink} to="/product ">
               Product
             </Nav.Link>
 
-            <Nav.Link className="nav-links" as={NavLink} to="/contact">
+            <Nav.Link className="nav-links" as={NavLink} to="/freelancer">
               Freelancer
             </Nav.Link>
 

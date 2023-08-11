@@ -35,7 +35,7 @@
     font-weight: 500;
 }
 .login-headings{
-    margin-left: 37%;
+    margin-left: 35%;
 }
 
 .bth-4{
@@ -46,4 +46,13 @@
 .textss{
     color: #5251C1;
     font-weight: 700;
+}
+
+.gogl{
+    background-color:#E6EBFF;
+    font-weight: 600;
+}
+
+.password-width{
+    border-radius: "100%px";
 }

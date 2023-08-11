@@ -1,95 +1,165 @@
 import React from "react";
-import "./Login.css";
 import login from "../Image/login.png";
-import { MdEmail } from "react-icons/md";
+import "./Sign.css";
 
-import { PiLockLaminatedFill } from "react-icons/pi";
 import { BsApple } from "react-icons/bs";
-import InputGroup from "react-bootstrap/InputGroup";
+import { AiOutlineMail } from "react-icons/ai";
+import { GoPerson,GoLock } from "react-icons/go";
 import { NavLink } from "react-router-dom";
 
-const Login = () => {
+const Sign = () => {
   return (
     <>
+     
       <div className="login">
         <h1>i</h1>
+        
         <div className="login-margin ">
-          {" "}
+     
           <div className="row bg-white login-bg">
             <div className="col-lg-6 col-md-12 col-sm-12">
               <img className="w-100" src={login} alt="" />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <h1 className="fw-bold mt-5  login-heading">Welcome Back</h1>
-              <div className="mx-5 ">
-            
-              
-                  <div className="mt-5 ">
+              <h1 className="fw-bold mt-5  sign-heading">Sign Up</h1>
+              <form className="sign-m">
+                <div className="mt-5  ">
                     <p
                       style={{
-                        backgroundColor: "#E6EBFF",
+                        // backgroundColor: "#E6EBFF",
                         color: "#fff",
                         padding: "10px",
-                        borderRadius: "2px",
+                        // borderRadius: "2px",
                         // marginRight: "-40px",
-                        display:"flex"
+                        display:"flex",
+                     
+                       
                       }}
-                      className="rounded-5 w-75 shadow"
+                      className="bootom w-75"
                     >
-                      <span className="mx-4 text-dark">
-                        <MdEmail className="mt-2" size={20} />
+                      <span className=" text-dark">
+                        <GoPerson className="mt-2" size={20} />
                       </span>  <div className="input-group-prepend ">
                       <input
                         type="text"
-                        className="form-control text-secondary  w-100"
-                        placeholder="Email"
+                        className="form-control  text-secondary mx-3  w-100"
+                        placeholder="Name..."
                         style={{
-                          backgroundColor: "#E6EBFF",
-                          border: "none",
-                          fontWeight:500
-                        }}
-                      />
-                    </div>
-                    </p>
-                  
-                  </div>
-                  <div className="mt-4 ">
-                    <p
-                      style={{
-                        backgroundColor: "#E6EBFF",
-                        color: "#fff",
-                        padding: "10px",
-                        borderRadius: "2px",
-                        // marginRight: "-40px",
-                        display:"flex"
-                      }}
-                      className="rounded-5 w-75 shadow"
-                    >
-                      <span className="mx-4 text-dark">
-                        <PiLockLaminatedFill className="mt-2" size={20} />
-                      </span>  <div className="input-group-prepend ">
-                      <input
-                        type="text"
-                        className="form-control text-secondary  w-100"
-                        placeholder="Password"
-                        style={{
-                          backgroundColor: "#E6EBFF",
+                          // backgroundColor: "#E6EBFF",
                           border: "none",
                           fontWeight:500,
+                       
                           
+                         
                         }}
                       />
                     </div>
                     </p>
                   
                   </div>
-               
-              </div>
-              <p className="  frgt-ps-text mt-4 mb-3">Forget password ?</p>
+                <div className=" ">
+                    <p
+                      style={{
+                        // backgroundColor: "#E6EBFF",
+                        color: "#fff",
+                        padding: "10px",
+                        // borderRadius: "2px",
+                        // marginRight: "-40px",
+                        display:"flex",
+                       
+                      }}
+                      className="bootom w-75"
+                    >
+                      <span className=" text-dark">
+                        <AiOutlineMail className="mt-2" size={20} />
+                      </span>  <div className="input-group-prepend ">
+                      <input
+                        type="text"
+                        className="form-control text-secondary mx-3 w-100"
+                        placeholder="Email..."
+                        style={{
+                          // backgroundColor: "#E6EBFF",
+                          border: "none",
+                          fontWeight:500,
+                         
+                        }}
+                      />
+                    </div>
+                    </p>
+                  
+                  </div>
+                <div className=" ">
+                    <p
+                      style={{
+                        // backgroundColor: "#E6EBFF",
+                        color: "#fff",
+                        padding: "10px",
+                        // borderRadius: "2px",
+                        // marginRight: "-40px",
+                        display:"flex",
+                       
+                      }}
+                      className="bootom w-75"
+                    >
+                      <span className=" text-dark">
+                        <GoLock className="mt-2" size={20} />
+                      </span>  <div className="input-group-prepend ">
+                      <input
+                        type="text"
+                        className="form-control text-secondary mx-3 w-100"
+                        placeholder="Password..."
+                        style={{
+                          // backgroundColor: "#E6EBFF",
+                          border: "none",
+                          fontWeight:500,
+                         
+                        }}
+                      />
+                    </div>
+                    </p>
+                  
+                  </div>
+                <div className=" ">
+                    <p
+                      style={{
+                        // backgroundColor: "#E6EBFF",
+                        color: "#fff",
+                        padding: "10px",
+                        // borderRadius: "2px",
+                        // marginRight: "-40px",
+                        display:"flex",
+                       
+                      }}
+                      className="bootom w-75"
+                    >
+                      <span className=" text-dark">
+                        <GoLock className="mt-2" size={20} />
+                      </span>  <div className="input-group-prepend ">
+                      <input
+                        type="text"
+                        className="form-control text-secondary mx-3 w-100"
+                        placeholder="Confirm Password..."
+                        style={{
+                          // backgroundColor: "#E6EBFF",
+                          border: "none",
+                          fontWeight:500,
+                         
+                        }}
+                      />
+                    </div>
+                    </p>
+                  
+                  </div>
+
+            
+            
+              </form>
+
+              <p className="  frgt-ps-text mt-5">Forget password ?</p>
               <div className="d-flex px-5">
                 <button className="text-white  p-3 bth-4   w-75 rounded-5">
                   {" "}
-                  Login
+                  Sign
                 </button>
               </div>
               <p className="fw-bold login-headings mt-3 ">- OR -</p>
@@ -133,11 +203,11 @@ const Login = () => {
                   </span>
                 </p>
               </div>
-              <NavLink as={NavLink} to="/sign" className="text-border">
+              <NavLink as={NavLink} to="/login" className="text-border">
                 {" "}
                 <p className="text-secondary  login-heading mt-5 ">
-                  Don’t have account ?{" "}
-                  <span className="textss">Create Account</span>{" "}
+                  Already have an account ?
+                  <span className="textss"> Login here</span>{" "}
                 </p>
               </NavLink>
             </div>
@@ -148,4 +218,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Sign;
